@@ -20,6 +20,11 @@
       "require": "./dist/number.js",
       "import": "./dist/number.mjs",
       "types": "./dist/number.d.ts"
+    },
+    "./demo": {
+      "require": "./dist/demo.js",
+      "import": "./dist/demo.mjs",
+      "types": "./dist/demo.d.ts"
     }
   },
   "scripts": {
