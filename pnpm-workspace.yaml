@@ -2,6 +2,6 @@ packages:
   #packages 目录下的所有包
   - packages/*
   # 文档站点
-  - docks
+  - docs
   # 构建配置
   - build

@@ -1,0 +1,95 @@
+.pp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.pp-button--primary {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.pp-button--primary:hover:not(:disabled):not(.pp-button--loading) {
+  background-color: #2563eb;
+}
+
+.pp-button--secondary {
+  background-color: #64748b;
+  color: white;
+}
+
+.pp-button--secondary:hover:not(:disabled):not(.pp-button--loading) {
+  background-color: #475569;
+}
+
+.pp-button--outline {
+  background-color: transparent;
+  color: #3b82f6;
+  border: 2px solid #3b82f6;
+}
+
+.pp-button--outline:hover:not(:disabled):not(.pp-button--loading) {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.pp-button--text {
+  background-color: transparent;
+  color: #3b82f6;
+  border: none;
+  padding: 4px 8px;
+}
+
+.pp-button--text:hover:not(:disabled):not(.pp-button--loading) {
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+.pp-button--small {
+  padding: 4px 12px;
+  font-size: 12px;
+}
+
+.pp-button--medium {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.pp-button--large {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.pp-button--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.pp-button--loading {
+  opacity: 0.8;
+  cursor: wait;
+}
+
+.pp-button__spinner {
+  font-size: 16px;
+  animation: spin 1s linear infinite;
+}
+
+.pp-button__text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
