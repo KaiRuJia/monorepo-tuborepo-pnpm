@@ -5,26 +5,12 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "files": ["dist"],
   "exports": {
     ".": {
       "require": "./dist/index.js",
       "import": "./dist/index.mjs",
       "types": "./dist/index.d.ts"
-    },
-    "./string": {
-      "require": "./dist/string.js",
-      "import": "./dist/string.mjs",
-      "types": "./dist/string.d.ts"
-    },
-    "./number": {
-      "require": "./dist/number.js",
-      "import": "./dist/number.mjs",
-      "types": "./dist/number.d.ts"
-    },
-    "./demo": {
-      "require": "./dist/demo.js",
-      "import": "./dist/demo.mjs",
-      "types": "./dist/demo.d.ts"
     }
   },
   "scripts": {
@@ -44,6 +30,10 @@
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.20.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KaiRuJia/monorepo-tuborepo-pnpm.git"
+  },
   "devDependencies": {
     "@types/node": "^20.11.0",
     "conventional-changelog-cli": "^5.0.0",

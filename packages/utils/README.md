@@ -1,5 +1,6 @@
 # @pawpatrol/utils
 
+# node veriosn: v20.19.0
 一个实用的工具函数库，提供字符串处理、数字操作等常用功能，支持按需加载和 TypeScript 类型定义。
 
 ## 安装
